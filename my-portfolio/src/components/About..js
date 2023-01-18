@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 
-function Project () {
+function About () {
 
 }
 
-export default Project;
+export default About;
