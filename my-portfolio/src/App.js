@@ -5,7 +5,7 @@ import Portfolio from './components/Portfolio';
 
 function App() {
   return (
-    <main>
+    <main style= {{ backgroundColor: '#E9EBF8' }}>
       <Portfolio />
     </main>
   );
