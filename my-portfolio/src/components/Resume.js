@@ -7,7 +7,8 @@ function Resume () {
     return(
         <div class = "container">
             <p>
-                You can download my Resume <a href = "" download>here</a>
+                <h2>Resumé</h2>
+                You can download my Resume <a href = "./Daniel-Vidal.pdf" download>here</a>
                 <h4>Front-End Technologies</h4>
                 <ul>
                     <li>HTML</li>

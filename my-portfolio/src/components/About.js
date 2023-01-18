@@ -4,6 +4,8 @@ function About() {
         <div class='container'>
             <div style={{ whiteSpace: 'pre-wrap' }}>
                 {"\n\n"}
+                <h2>About Me</h2>
+                {"\n\n"}
                 <img style={{ height: 200, borderRadius: '50%' }} src="https://res.cloudinary.com/dfe0rjexj/image/upload/v1674069290/IMG_1005_kwc7iq.jpg" id="daniel-vidal-image" />
                 {"\n\n"}
                 <p>

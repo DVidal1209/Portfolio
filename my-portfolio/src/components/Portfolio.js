@@ -8,14 +8,14 @@ import Resume from "./Resume";
 
 function Portfolio () {
     return (
-        <main>
+        <div>
             <Header />
             <About />
             <Project />
             <Contact />
             <Resume />
             <Footer />
-        </main>
+        </div>
     )
 }
 

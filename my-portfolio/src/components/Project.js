@@ -19,6 +19,15 @@ function Project() {
         setHoverWeather(false);
     };
 
+    const [hoverCars, setHoverCars] = useState(false);
+
+    const handleCarsEnter = () => {
+        setHoverCars(true);
+    };
+    const handleCarsLeave = () => {
+        setHoverCars(false);
+    };
+
     const styles = {
         img: {
             width: '100%',
@@ -26,7 +35,7 @@ function Project() {
         },
         imgWrap: {
             position: 'relative',
-            // maxWidth: '30%'
+            marginBottom: "10px"
         },
         imgDescriptionAes: {
             position: 'absolute',
@@ -38,8 +47,8 @@ function Project() {
             left: '0',
             right: '0',
             maxWidth: '100%',
-            background: 'rgba(0, 0, 0, 0.1)',
-            color: '#093',
+            background: 'rgba(0, 0, 0, 0.5)',
+            color: 'lightblue',
             visibility: hoverAesthetics ? 'visible' : 'hidden',
             opacity: hoverAesthetics ? '1' : '0',
             fontSize: '125%',
@@ -55,10 +64,27 @@ function Project() {
             left: '0',
             right: '0',
             maxWidth: '100%',
-            background: 'rgba(0, 0, 0, 0.1)',
-            color: '#093',
+            background: 'rgba(0, 0, 0, 0.4)',
+            color: 'lightblue',
             visibility: hoverWeather ? 'visible' : 'hidden',
             opacity: hoverWeather ? '1' : '0',
+            fontSize: '125%',
+            fontWeight: 'bold'
+        },
+        imgDescriptionCars: {
+            position: 'absolute',
+            height: '100%',
+            paddingTop: '30%',
+            paddingLeft: '2%',
+            top: '0',
+            bottom: '0',
+            left: '0',
+            right: '0',
+            maxWidth: '100%',
+            background: 'rgba(0, 0, 0, 0.4)',
+            color: 'lightblue',
+            visibility: hoverCars ? 'visible' : 'hidden',
+            opacity: hoverCars ? '1' : '0',
             fontSize: '125%',
             fontWeight: 'bold'
         },
@@ -68,45 +94,67 @@ function Project() {
     }
 
     return (
-        <div class="container" style={{ display: 'flex' }}>
-            <div style={styles.imgWrap}
-                onMouseEnter={handleAestheticsEnter}
-                onMouseLeave={handleAestheticsLeave}
-                class="col-5">
-                <img style={styles.img} src="https://res.cloudinary.com/dfe0rjexj/image/upload/v1674074536/Aesthetic_20Search_20Engine_nsmzls.png" alt="Aesthetic Search Engine Screenshot" />
-                <div style={styles.imgDescriptionAes}>
-                    <p>
-                        <a style={styles.linkStyle} href="https://dvidal1209.github.io/project-1/">
-                            Aesthetic Search Engine
-                        </a>
-                        <a href="https://github.com/DVidal1209/project-1">
-                            <img style={{ height: 25 }} src="https://res.cloudinary.com/dfe0rjexj/image/upload/v1674074894/github-mark_1_xtdjwg.png" alt="GitHub Logo" />
-                        </a>
-                        <br></br>
-                        Javascript/HTML/CSS
-                    </p>
+        <div class="container" style={{ display: 'flex', flexDirection: 'column'}}>
+                <h2>Projects</h2>
+            <div class="row">
+                <div style={styles.imgWrap}
+                    onMouseEnter={handleAestheticsEnter}
+                    onMouseLeave={handleAestheticsLeave}
+                    class="col-5">
+                    <img style={styles.img} src="https://res.cloudinary.com/dfe0rjexj/image/upload/v1674074536/Aesthetic_20Search_20Engine_nsmzls.png" alt="Aesthetic Search Engine Screenshot" />
+                    <div style={styles.imgDescriptionAes}>
+                        <p>
+                            <a style={styles.linkStyle} href="https://dvidal1209.github.io/project-1/">
+                                Aesthetic Search Engine
+                            </a>
+                            <a href="https://github.com/DVidal1209/project-1">
+                                <img style={{ height: 25 }} src="https://res.cloudinary.com/dfe0rjexj/image/upload/v1674084018/github-mark-white_gpcgni.png" alt="GitHub Logo" />
+                            </a>
+                            <br></br>
+                            Javascript/HTML/CSS
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class='col-2'></div>
-            <div style={styles.imgWrap}
-                onMouseEnter={handleWeatherEnter}
-                onMouseLeave={handleWeatherLeave}
-                class="col-5">
-                <img style={styles.img} src="https://res.cloudinary.com/dfe0rjexj/image/upload/v1674075936/06-server-side-apis-homework-demo_xmkygh.png" />
-                <div style={styles.imgDescriptionWeather}>
-                    <p>
-                        <a style={styles.linkStyle} href="https://dvidal1209.github.io/weather-call/">
-                            Weather Forecast
-                        </a>
-                        <a href="https://github.com/DVidal1209/weather-call">
-                            <img style={{ height: 25 }} src="https://res.cloudinary.com/dfe0rjexj/image/upload/v1674074894/github-mark_1_xtdjwg.png" alt="GitHub Logo" />
-                        </a>
-                        <br></br>
-                        Javascript/Accuweather API/HTML
-                    </p>
+                <div class='col-2'></div>
+                <div style={styles.imgWrap}
+                    onMouseEnter={handleWeatherEnter}
+                    onMouseLeave={handleWeatherLeave}
+                    class="col-5">
+                    <img style={styles.img} src="https://res.cloudinary.com/dfe0rjexj/image/upload/v1674075936/06-server-side-apis-homework-demo_xmkygh.png" />
+                    <div style={styles.imgDescriptionWeather}>
+                        <p>
+                            <a style={styles.linkStyle} href="https://dvidal1209.github.io/weather-call/">
+                                Weather Forecast
+                            </a>
+                            <a href="https://github.com/DVidal1209/weather-call">
+                                <img style={{ height: 25 }} src="https://res.cloudinary.com/dfe0rjexj/image/upload/v1674084018/github-mark-white_gpcgni.png" alt="GitHub Logo" />
+                            </a>
+                            <br></br>
+                            Javascript/Accuweather API/HTML
+                        </p>
+                    </div>
+                </div>
+                <div style={styles.imgWrap}
+                    onMouseEnter={handleCarsEnter}
+                    onMouseLeave={handleCarsLeave}
+                    class="col-5">
+                    <img style={styles.img} src="https://res.cloudinary.com/dfe0rjexj/image/upload/v1674083480/My_project_d3uney.png" />
+                    <div style={styles.imgDescriptionCars}>
+                        <p>
+                            <a style={styles.linkStyle} href="https://floating-river-45182.herokuapp.com/">
+                                Cars-R-Us
+                            </a>
+                            <a href="https://github.com/xiaojing168jmg168/cars-r-us">
+                                <img style={{ height: 25 }} src="https://res.cloudinary.com/dfe0rjexj/image/upload/v1674084018/github-mark-white_gpcgni.png" alt="GitHub Logo" />
+                            </a>
+                            <br></br>
+                            Node.js/Handlebars/Sequelize
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
+
     )
 }
 
