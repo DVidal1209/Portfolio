@@ -94,13 +94,13 @@ function Project() {
     }
 
     return (
-        <div class="container" style={{ display: 'flex', flexDirection: 'column'}}>
+        <div className="container" style={{ display: 'flex', flexDirection: 'column'}}>
                 <h2>Projects</h2>
-            <div class="row">
+            <div className="row">
                 <div style={styles.imgWrap}
                     onMouseEnter={handleAestheticsEnter}
                     onMouseLeave={handleAestheticsLeave}
-                    class="col-5">
+                    className="col-5">
                     <img style={styles.img} src="https://res.cloudinary.com/dfe0rjexj/image/upload/v1674074536/Aesthetic_20Search_20Engine_nsmzls.png" alt="Aesthetic Search Engine Screenshot" />
                     <div style={styles.imgDescriptionAes}>
                         <p>
@@ -115,11 +115,11 @@ function Project() {
                         </p>
                     </div>
                 </div>
-                <div class='col-2'></div>
+                <div className='col-2'></div>
                 <div style={styles.imgWrap}
                     onMouseEnter={handleWeatherEnter}
                     onMouseLeave={handleWeatherLeave}
-                    class="col-5">
+                    className="col-5">
                     <img style={styles.img} src="https://res.cloudinary.com/dfe0rjexj/image/upload/v1674075936/06-server-side-apis-homework-demo_xmkygh.png" />
                     <div style={styles.imgDescriptionWeather}>
                         <p>
@@ -137,7 +137,7 @@ function Project() {
                 <div style={styles.imgWrap}
                     onMouseEnter={handleCarsEnter}
                     onMouseLeave={handleCarsLeave}
-                    class="col-5">
+                    className="col-5">
                     <img style={styles.img} src="https://res.cloudinary.com/dfe0rjexj/image/upload/v1674083480/My_project_d3uney.png" />
                     <div style={styles.imgDescriptionCars}>
                         <p>

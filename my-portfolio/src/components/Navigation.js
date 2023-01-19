@@ -1,22 +1,22 @@
-import React, { useState } from "react"
+import React from "react"
 
-function Navigation() {
-
+function Navigation(props) {
+    const { handlePageChange } = props
     const styles = {
-        button: {
+        a: {
             fontWeight: 'bold',
-            background: 'none',
-            border: 'none',
-            cursor: 'pointer'
+            cursor: 'pointer',
+            textDecoration: 'none',
+            color: 'black'
         }
     }
 
     return (
         <nav style={{ display: 'flex' }}>
-            <button style={styles.button} class='col'>About Me</button>
-            <button style={styles.button} class='col'>Portfolio</button>
-            <button style={styles.button} class='col'>Contact</button>
-            <button style={styles.button} class='col'>Resume</button>
+            <a href = "#About" style={styles.a} onClick={() => handlePageChange("About")} className='col'>About Me</a>
+            <a href = "#Portfolio" style={styles.a} onClick={() => handlePageChange("Portfolio")} className='col'>Portfolio</a>
+            <a href = "#Contact" style={styles.a} onClick={() => handlePageChange("Contact")} className='col'>Contact</a>
+            <a href = "#Resume" style={styles.a} onClick={() => handlePageChange("Resume")} className='col'>Resume</a>
         </nav>
     )
 }

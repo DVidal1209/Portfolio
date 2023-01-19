@@ -5,10 +5,11 @@ function Resume () {
 
 
     return(
-        <div class = "container">
-            <p>
+        <div className = "container">
                 <h2>Resumé</h2>
+            <p>
                 You can download my Resume <a href = "./Daniel-Vidal.pdf" download>here</a>
+            </p>
                 <h4>Front-End Technologies</h4>
                 <ul>
                     <li>HTML</li>
@@ -25,7 +26,6 @@ function Resume () {
                     <li>MySQL (Sequelize)</li>
                     <li>MongoDB (Mongoose)</li>
                 </ul>
-            </p>
         </div>
     )
 }

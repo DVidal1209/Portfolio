@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 function About() {
     return (
-        <div class='container'>
+        <div className='container'>
             <div style={{ whiteSpace: 'pre-wrap' }}>
                 {"\n\n"}
                 <h2>About Me</h2>
