@@ -44,16 +44,6 @@ function Portfolio () {
             </div>
         )
     }
-
-    return (
-        <div>
-            <Header currentPage={currentPage} handlePageChange={handlePageChange} />
-            <About />
-            <Project />
-            <Contact />
-            <Resume />
-        </div>
-    )
 }
 
 export default Portfolio;
