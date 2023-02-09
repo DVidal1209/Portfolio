@@ -87,6 +87,22 @@ function Project() {
             opacity: hoverCars ? '1' : '0',
             fontSize: '125%',
             fontWeight: 'bold'
+        },imgDescriptionArt: {
+            position: 'absolute',
+            height: '100%',
+            paddingTop: '30%',
+            paddingLeft: '2%',
+            top: '0',
+            bottom: '0',
+            left: '0',
+            right: '0',
+            maxWidth: '100%',
+            background: 'rgba(0, 0, 0, 0.4)',
+            color: 'lightblue',
+            visibility: hoverCars ? 'visible' : 'hidden',
+            opacity: hoverCars ? '1' : '0',
+            fontSize: '125%',
+            fontWeight: 'bold'
         },
         linkStyle: {
             textDecoration: 'none'
@@ -149,6 +165,24 @@ function Project() {
                             </a>
                             <br></br>
                             Node.js/Handlebars/Sequelize
+                        </p>
+                    </div>
+                </div>
+                <div style={styles.imgWrap}
+                    onMouseEnter={handleAestheticsEnter}
+                    onMouseLeave={handleAestheticsLeave}
+                    className="col-5">
+                    <img style={styles.img} src="https://res.cloudinary.com/dfe0rjexj/image/upload/v1675905331/My_project_1_nlyeq0.png" alt="Back End Burglars Art Museum" />
+                    <div style={styles.imgDescriptionArt}>
+                        <p>
+                            <a style={styles.linkStyle} href="https://protected-shore-90563.herokuapp.com/">
+                                Art Museum
+                            </a>
+                            <a href="https://github.com/DVidal1209/art-museum">
+                                <img style={{ height: 25 }} src="https://res.cloudinary.com/dfe0rjexj/image/upload/v1674084018/github-mark-white_gpcgni.png" alt="GitHub Logo" />
+                            </a>
+                            <br></br>
+                            Javascript/HTML/CSS
                         </p>
                     </div>
                 </div>
