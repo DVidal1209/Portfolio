@@ -8,7 +8,7 @@ function Resume () {
         <div className = "container">
                 <h2>Resumé</h2>
             <p>
-                You can find my Resume <a target="_blank"  href = "https://docs.google.com/document/d/e/2PACX-1vQEf9dpRXDX5bLHeBUObvQ6ozf_JU7qhNIHxECDP6x4pbZgIqHpHtHHz4LC_U6agq5qjdeTHndAkEEj/pub">here</a>
+                You can find my Resume <a target="_blank"  href = "https://docs.google.com/document/d/e/2PACX-1vQmw3zZspTcfdtZoUEdhv7J7XKVWEtyykpRcI5ycD9cCTgJDrzfRhm3dLJbkhMmZPXCQfAN7c3RNK_M/pub">here</a>
             </p>
                 <h4>Front-End Technologies</h4>
                 <ul>
