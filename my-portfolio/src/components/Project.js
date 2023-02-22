@@ -28,6 +28,15 @@ function Project() {
         setHoverCars(false);
     };
 
+    const [hoverArt, setHoverArt] = useState(false);
+
+    const handleArtEnter = () => {
+        setHoverArt(true);
+    };
+    const handleArtLeave = () => {
+        setHoverArt(false);
+    };
+
     const styles = {
         img: {
             width: '100%',
@@ -99,8 +108,8 @@ function Project() {
             maxWidth: '100%',
             background: 'rgba(0, 0, 0, 0.4)',
             color: 'lightblue',
-            visibility: hoverCars ? 'visible' : 'hidden',
-            opacity: hoverCars ? '1' : '0',
+            visibility: hoverArt ? 'visible' : 'hidden',
+            opacity: hoverArt ? '1' : '0',
             fontSize: '125%',
             fontWeight: 'bold'
         },
@@ -168,9 +177,10 @@ function Project() {
                         </p>
                     </div>
                 </div>
+                <div className='col-2'></div>
                 <div style={styles.imgWrap}
-                    onMouseEnter={handleAestheticsEnter}
-                    onMouseLeave={handleAestheticsLeave}
+                    onMouseEnter={handleArtEnter}
+                    onMouseLeave={handleArtLeave}
                     className="col-5">
                     <img style={styles.img} src="https://res.cloudinary.com/dfe0rjexj/image/upload/v1675905331/My_project_1_nlyeq0.png" alt="Back End Burglars Art Museum" />
                     <div style={styles.imgDescriptionArt}>
@@ -182,7 +192,7 @@ function Project() {
                                 <img style={{ height: 25 }} src="https://res.cloudinary.com/dfe0rjexj/image/upload/v1674084018/github-mark-white_gpcgni.png" alt="GitHub Logo" />
                             </a>
                             <br></br>
-                            Javascript/HTML/CSS
+                            React/MongoDB/GraphQL/JWT
                         </p>
                     </div>
                 </div>
