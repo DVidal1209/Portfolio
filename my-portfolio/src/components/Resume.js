@@ -8,7 +8,7 @@ function Resume () {
         <div className = "container">
                 <h2>Resumé</h2>
             <p>
-                You can download my Resume <a href = "./Daniel-Vidal.pdf" download>here</a>
+                You can find my Resume <a target="_blank"  href = "https://docs.google.com/document/d/e/2PACX-1vQEf9dpRXDX5bLHeBUObvQ6ozf_JU7qhNIHxECDP6x4pbZgIqHpHtHHz4LC_U6agq5qjdeTHndAkEEj/pub">here</a>
             </p>
                 <h4>Front-End Technologies</h4>
                 <ul>
