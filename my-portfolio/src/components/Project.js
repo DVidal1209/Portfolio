@@ -49,7 +49,7 @@ function Project() {
         imgDescriptionAes: {
             position: 'absolute',
             height: '100%',
-            paddingTop: '30%',
+            paddingTop: '3%',
             paddingLeft: '2%',
             top: '0',
             bottom: '0',
@@ -66,7 +66,7 @@ function Project() {
         imgDescriptionWeather: {
             position: 'absolute',
             height: '100%',
-            paddingTop: '30%',
+            paddingTop: '3%',
             paddingLeft: '2%',
             top: '0',
             bottom: '0',
@@ -83,7 +83,7 @@ function Project() {
         imgDescriptionCars: {
             position: 'absolute',
             height: '100%',
-            paddingTop: '30%',
+            paddingTop: '3%',
             paddingLeft: '2%',
             top: '0',
             bottom: '0',
@@ -99,7 +99,7 @@ function Project() {
         },imgDescriptionArt: {
             position: 'absolute',
             height: '100%',
-            paddingTop: '30%',
+            paddingTop: '3%',
             paddingLeft: '2%',
             top: '0',
             bottom: '0',
@@ -114,7 +114,7 @@ function Project() {
             fontWeight: 'bold'
         },
         linkStyle: {
-            textDecoration: 'none'
+            color: "lime",
         }
     }
 
@@ -132,8 +132,13 @@ function Project() {
                             <a style={styles.linkStyle} href="https://dvidal1209.github.io/project-1/">
                                 Aesthetic Search Engine
                             </a>
-                            <a href="https://github.com/DVidal1209/project-1">
-                                <img style={{ height: 25 }} src="https://res.cloudinary.com/dfe0rjexj/image/upload/v1674084018/github-mark-white_gpcgni.png" alt="GitHub Logo" />
+                            <br/>
+                            <br/>
+                            This website was created for to allows users to search for inpiration using images from various different websites all consolidated into one single webpage.
+                            <br/>
+                            <br/>
+                            <a style={styles.linkStyle} href="https://github.com/DVidal1209/project-1">
+                                Github Repo<img style={{ height: 25 }} src="https://res.cloudinary.com/dfe0rjexj/image/upload/v1674084018/github-mark-white_gpcgni.png" alt="GitHub Logo" />
                             </a>
                             <br></br>
                             Javascript/HTML/CSS
@@ -151,8 +156,13 @@ function Project() {
                             <a style={styles.linkStyle} href="https://dvidal1209.github.io/weather-call/">
                                 Weather Forecast
                             </a>
-                            <a href="https://github.com/DVidal1209/weather-call">
-                                <img style={{ height: 25 }} src="https://res.cloudinary.com/dfe0rjexj/image/upload/v1674084018/github-mark-white_gpcgni.png" alt="GitHub Logo" />
+                            <br/>
+                            <br/>
+                            This website allows users to see the 5 day weather forecast for a given area.
+                            <br/>
+                            <br/>
+                            <a style={styles.linkStyle} href="https://github.com/DVidal1209/weather-call">
+                                Github Repo<img style={{ height: 25 }} src="https://res.cloudinary.com/dfe0rjexj/image/upload/v1674084018/github-mark-white_gpcgni.png" alt="GitHub Logo" />
                             </a>
                             <br></br>
                             Javascript/Accuweather API/HTML
@@ -169,8 +179,13 @@ function Project() {
                             <a style={styles.linkStyle} href="https://floating-river-45182.herokuapp.com/">
                                 Cars-R-Us
                             </a>
-                            <a href="https://github.com/xiaojing168jmg168/cars-r-us">
-                                <img style={{ height: 25 }} src="https://res.cloudinary.com/dfe0rjexj/image/upload/v1674084018/github-mark-white_gpcgni.png" alt="GitHub Logo" />
+                            <br/>
+                            <br/>
+                            This is a website that allows users to advertise vehicles for sale while providing contact information.
+                            <br/>
+                            <br/>
+                            <a style={styles.linkStyle} href="https://github.com/xiaojing168jmg168/cars-r-us">
+                                Github Repo<img style={{ height: 25 }} src="https://res.cloudinary.com/dfe0rjexj/image/upload/v1674084018/github-mark-white_gpcgni.png" alt="GitHub Logo" />
                             </a>
                             <br></br>
                             Node.js/Handlebars/Sequelize
@@ -188,8 +203,13 @@ function Project() {
                             <a style={styles.linkStyle} href="https://protected-shore-90563.herokuapp.com/">
                                 Art Museum
                             </a>
-                            <a href="https://github.com/DVidal1209/art-museum">
-                                <img style={{ height: 25 }} src="https://res.cloudinary.com/dfe0rjexj/image/upload/v1674084018/github-mark-white_gpcgni.png" alt="GitHub Logo" />
+                            <br/>
+                            <br/>
+                            This is a website that allows users to gather together and share art while communicating with each other.
+                            <br/>
+                            <br/>
+                            <a style={styles.linkStyle} href="https://github.com/DVidal1209/art-museum">
+                                Github Repo<img style={{ height: 25 }} src="https://res.cloudinary.com/dfe0rjexj/image/upload/v1674084018/github-mark-white_gpcgni.png" alt="GitHub Logo" />
                             </a>
                             <br></br>
                             React/MongoDB/GraphQL/JWT

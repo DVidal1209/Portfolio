@@ -48,7 +48,7 @@ function Contact() {
     return (
         <div className='container' style={{ whiteSpace: 'pre-wrap' }}>
             <h2>Contact Me</h2>
-            <p style = {{ color: "red" }}>{errorMessage}</p>
+            {/* <p style = {{ color: "red" }}>{errorMessage}</p>
             <form style = {{ display: "flex", flexWrap: "wrap", width: "40%"}} className="form">
                 <input
                     value={name}
@@ -75,7 +75,20 @@ function Contact() {
                 />
                 {"\n"}
                 <button type="button" onClick={handleFormSubmit}>Submit</button>
-            </form>
+            </form> */}
+            <p>
+                My Name is Daniel Vidal. I can be contacted via:
+                <br/>
+                Telephone: <a href="tel:347-287-4880">
+                    347-287-4880
+                </a>
+                <br/>
+                Email: <a href = "mailto:daniel.vidal17@yahoo.com">
+                    daniel.vidal17@yahoo.com
+                </a>
+                <br/>
+                <a href = "https://www.linkedin.com/in/daniel-vidal-63514a194/">LinkedIn</a> <a href="https://github.com/DVidal1209">GitHub</a>
+            </p>
         </div>
     )
 }

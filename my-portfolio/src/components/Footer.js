@@ -8,7 +8,7 @@ function Footer() {
             <a href="https://github.com/DVidal1209" style = {{ padding: 5 }}>
                 <img style={{ height: 25 }} src="https://res.cloudinary.com/dfe0rjexj/image/upload/v1674084018/github-mark-white_gpcgni.png" alt="GitHub Logo" />
             </a>
-            <a href = "" style = {{ padding: 5 }}>
+            <a href = "https://www.linkedin.com/in/daniel-vidal-63514a194/" style = {{ padding: 5 }}>
             <img style={{ height: 25 }} src="https://res.cloudinary.com/dfe0rjexj/image/upload/v1674086590/LI-In-Bug_ayezvw.png" alt="LinkedIn Logo" /> 
             </a>
             </div>
